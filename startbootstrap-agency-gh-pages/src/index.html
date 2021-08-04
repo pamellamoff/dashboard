@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Minas Telecom</title>
+
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../public/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" type="text/css" href="../src/css/styles.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../public/images/log.gmt_08inv.png"
+            alt="Logomarca Minas Telecom"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#page-top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Serviços</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Bem vindo a</div>
+        <div class="masthead-heading text-uppercase">Grupo Minas Telecom</div>
+        <div class="text-uppercase" id="subtitle">
+          <span>Intranet</span>
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-primary btn-xl text-uppercase open-modal"
+          onclick="openModal()"
+        >
+          Entrar
+        </button>
+      </div>
+
+      <img
+        id="imgLogoTransparency"
+        src="../public/images/Desbrave_white.png"
+        alt="Logomarca Desbrave"
+      />
+    </header>
+    <!--Box Login-->
+    <div class="box-modal-login" id="modal">
+      <div class="text-center">
+        <div class="window-modal-login">
+          <span class="close-modal" onclick="closeModal()">&times;</span>
+          <h2 class="section-heading text-uppercase">Intranet</h2>
+          <form id="form-login" method="post" action="/index">
+            <div class="containerUser">
+              <input
+                required
+                id="user"
+                class="text-muted"
+                type="text "
+                name="user"
+                placeholder="Usuário"
+              />
+              <div class="invalid-feedback"></div>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="containerPassword">
+              <input
+                required
+                id="senha"
+                class="text-muted"
+                type="password"
+                name="senha"
+                placeholder="Senha"
+                autocomplete="current-password"
+              />
+              <!--<div class="alert alert-warning">
+                This is a danger alert—check it out!
+              </div>-->
+              <i class="fas fa-lock"></i>
+            </div>
+          </form>
+          <div class="containerLogin" id="bottomlogin">
+            <button
+              type="submit"
+              class="btn btn-primary btn-xl text-uppercase"
+              href="login.html"
+            >
+              Entrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services-->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Serviços</h2>
+          <h3 class="section-subheading text-muted">
+            O que você precisa realmente
+          </h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a class="fa-stack fa-4x" target="_blank" href="#!">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </a>
+            <h4 class="my-3">Comunicados</h4>
+            <p class="text-muted">
+              Fique atento a todos os aviso da Minas Telecom. Toda informação
+              empresarial integrado em um único lugar ao seu alcance
+            </p>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="fa-stack fa-4x"
+              target="_blank"
+              href="https://www.portalvivoligado.com.br/_sys/vivo-ligado-login/?redirect=Lw%3D%3D"
+            >
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </a>
+            <h4 class="my-3">Vivo ligado</h4>
+            <p class="text-muted">
+              Encontre ofertas de smartphones, tablets e internet banda larga
+              que a nossa parceira Vivo tem para ofecer aos seus clientes.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="fa-stack fa-4x"
+              target="_blank"
+              href="https://slack.com/intl/pt-br/"
+            >
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </a>
+            <h4 class="my-3">Chat</h4>
+            <p class="text-muted">
+              Uma forma mais fácil e organizada de trabalhar. Ao nos reunirmos
+              nos canais do Slack, podemos conversar de modo prático
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright &copy; Your Website 2021
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <a
+              class="btn btn-dark btn-social mx-2"
+              target="_blank"
+              href="https://www.facebook.com/MINASTELECOM"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              target="_blank"
+              href="https://www.linkedin.com/company/grupo-minas-telecom/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!"
+              >Privacy Policy</a
+            >
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
+  </body>
+</html>
